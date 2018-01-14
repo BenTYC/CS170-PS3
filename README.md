@@ -11,7 +11,7 @@ It calls two functions you should write: [W1,W2] = trainneuralnet(X,Y,nhid,lambd
 and unit standard deviation). Then divide all weights by 10 to make them closer to 0.  
 2. Each layer should have an “offset” unit (to supply a 1 to the next layer), except the output layer.  
 3. For a problem this small, use batch updates. That is, the step is based on the sum of the gradients for each element in the training set.  
-4. For the step size start with eta = 0.1.  
+4. For the step size start with η = 0.1.  
 5. For real neural network training, people use rules like those discussed on http://sebastianruder.com/optimizing-gradient-descent/index.html, but they are more complex than needed for this simple example. Instead, every 1000 iterations, check to see if the loss function (including the regularization part) has decreased over the past 1000 iterations. If it has not, divide ⌘ by 10 and continue.
-6. Check the maximum gradient element (before multiplying it by eta). If its absolute value is less than 10^-3, stop the algorithm.  
+6. Check the maximum gradient element (before multiplying it by η). If its absolute value is less than 10^-3, stop the algorithm.  
 
